@@ -9,13 +9,15 @@ const time = getTime();
 
 export const getEventsList = async () => {
   const res = await octokit.request(urlRepoCalendar);
-  const eventsFolder = res.data.find((repo) => repo.name === 'events');
+  const eventsFolder = res.data.find((repo: { [name: string]: string }) => repo.name === 'events');
 
   const response = await octokit.request(eventsFolder.git_url);
-  const newEvents = response.data.tree.filter((event) => getIsItFutureTime(event.path, time));
+  const newEvents = response.data.tree.filter((event: { [name: string]: string }) =>
+    getIsItFutureTime(event.path, time),
+  );
 
   const newEventsRawData = (await Promise.all(
-    newEvents.map(async (event) => {
+    newEvents.map(async (event: { [name: string]: string }) => {
       const response = await octokit.request(event.url);
       return decode(response.data.content);
     }),
