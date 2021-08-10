@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "build": "rm -rf ./build && npx tsc",
+    "build": "rm -rf ./build && node ./node_modules/typescript/bin/tsc",
     "dev": "ts-node-dev --respawn src/index.ts",
     "start": "npm run build && node build/index.js",
     "lint": "eslint src/**/*.ts",
