@@ -1,0 +1,51 @@
+export const newEventsInfoMock = [
+  [
+    ['name', 'SberMarket Tech'],
+    ['date', '22.07.2021'],
+    ['time', '18:00'],
+    ['city', 'Москва'],
+    ['link', 'https://sbermarket.timepad.ru/event/1705746/'],
+    ['online', 'true'],
+  ],
+  [
+    ['name', 'Hot Frontend'],
+    ['date', '24.07.2021'],
+    ['time', '11:00-15:00'],
+    ['city', 'Краснодар'],
+    ['link', 'https://afisha.timepad.ru/event/1689117'],
+  ],
+  [
+    ['name', 'RamblerMeetup&Frontend'],
+    ['date', '29.07.2021'],
+    ['time', '19:00-21:00'],
+    ['city', 'Москва'],
+    ['link', 'https://rambler-co-e-org.timepad.ru/event/1709905/'],
+    ['online', 'true'],
+  ],
+  [
+    ['name', 'Frontend Conference'],
+    ['date', '26.08.2021-27.08.2021'],
+    ['city', 'Цюрих'],
+    ['link', 'https://frontconference.com/'],
+  ],
+  [
+    ['name', '404fest X'],
+    ['date', '25.09.2021-26.09.2021'],
+    ['time', '09:00-23:59'],
+    ['city', 'Самара'],
+    ['link', 'https://2021.404fest.ru/'],
+  ],
+  [
+    ['name', 'FrontendConf'],
+    ['date', '11.10.2021-12.10.2021'],
+    ['time', '10:00-19:00'],
+    ['city', 'Москва'],
+    ['link', 'https://frontendconf.ru/moscow/2021'],
+  ],
+  [
+    ['name', 'Vue.js London'],
+    ['date', '20.10.2021-21.10.2021'],
+    ['city', 'Лондон'],
+    ['link', 'https://vuejs.london/'],
+  ],
+];
